@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="Screenshot.png" alt="Sign-up Form">
+            <div class="logo">
+                <img src="odin-lined.png" alt="Odin logo">
+                <p>ODIN</p>
+            </div>
+        </div>
+        <div class="right">
+            <p id="start">Get Started</p>
+            <form action="#" method="post">
+                <label for="fname">First Name</label>
+                <input required type="text" id="fname" name="f_name">
+                <label for="lname">Last Name</label>
+                <input required type="text" id="lname" name="l_name">
+                <label for="mail">Email</label>
+                <input required type="email" id="fname" name="f_name">
+                <label for="phone">Phone</label>
+                <input required type="tel" id="phone" name="phone_Number">
+                <label for="pass">Password</label>
+                <input required type="password" id="pass" name="password" pattern=".{6,}">
+                <label for="confirm_pass">Confirm <br>Password</label>
+                <input required type="password" id="confirm_pass" name="confirm_password" pattern=".{6,}">
+                <button type="submit">Create Account</button>
+            </form>
+            <p id="last">Already Have an account? <a href="">Login</a></p>
+        </div>
+    </div>
+</body>
+</html>
