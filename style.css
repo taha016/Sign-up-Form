@@ -71,8 +71,9 @@ form {
 input {
     width: 35%;
     border-radius: 5px;
-    border: #F4BCAE;
+    border: 2px solid #F4BCAE;
     height: 15%;
+    outline: none;
 }
 
 input[type='email'] {
@@ -87,12 +88,13 @@ input[type='password'] {
 label[for='confirm_pass'] {
     transform: translateY(-20%);
 }
-input:invalid {
-    border-color: red;
+input:user-invalid {
+    border: 2.5px solid red;
 }
 input:focus {
-    border-color: blue;
-    box-shadow: 0 0 4px rgba(0, 0, 255, 0.5);
+    border: 2px solid blue;
+    box-shadow: 4px 0 4px rgba(0, 0, 255, 0.5);
+    transition: all .5s ease;
 }
 
 #start {
@@ -114,7 +116,20 @@ form > button {
     border-radius: 15px;
     cursor: pointer;
     width: 30%;
+    transition: all .3s ease;
 }
+
+form > button:hover {
+    background-color: #554FBB;
+    box-shadow: 0 0 10px rgba(106, 98, 210, 0.944); /* Adds a glowing effect */
+}
+
+
+form > button:active {
+    background-color: #4438a5; /* Darker shade when clicked */
+    transform: scale(.95); /* Pressing effect */
+}
+
 #last {
     transform: translateY(-160%);
     font-size: large;
@@ -124,4 +139,8 @@ form > button {
 a {
     text-decoration: none;
     color: #554FBB;
+}
+span {
+    color: red;
+    font-size: large;
 }
